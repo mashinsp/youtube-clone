@@ -1,0 +1,153 @@
+.top-bar{
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 55px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color:white;
+  border-bottom: 1px solid rgb(222, 222, 222);
+}
+.left-section{
+  display:flex;
+  align-items: center;
+  padding-left:5px;
+}
+.hamburger{
+  height:25px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.logo{
+  height:20px;
+  margin-right: 40px;
+}
+.middle-section{
+  display:flex;
+  flex: 1;
+  max-width: 500px;
+  align-items: center;
+}
+.search-logo{
+  padding-top: 2px;
+  height:23px;
+}
+.search-button{
+  border: 1px solid rgb(190, 190, 190);
+  margin-left: -1px;
+  height:40px;
+  width:70px;
+  border-radius:2px;
+  background: rgb(245, 245, 245);
+}
+.search-button,
+.voice-button,
+.create,
+.upload,
+.yt-apps{
+  position: relative;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
+.search-button .tooltip,
+.voice-button .tooltip,
+.create .tooltip,
+.upload .tooltip,
+.yt-apps .tooltip{
+  border-radius: 2px;
+  position: absolute;
+  bottom:-30px;
+  background:rgb(174, 174, 174);
+  color:white;
+  padding:5px;
+  white-space:nowrap;
+  padding-top: 2px;
+  font-family: roboto;
+  font-size: 12px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s;
+}
+.search-button:hover .tooltip,
+.voice-button:hover .tooltip,
+.create:hover .tooltip,
+.upload:hover .tooltip,
+.yt-apps:hover .tooltip
+{
+  opacity: 1;
+}
+
+.right-section div:hover,
+.left-section img:hover,
+.middle-section button:hover
+{
+  cursor: pointer;
+}
+.voice-button{
+  background: rgb(245, 245, 245);
+  height:40px;
+  width:40px;
+  border: none;
+  border-radius: 20px;
+  margin-left: 10px;
+}
+.voice-logo{
+  height: 26px;
+  padding-top: 2px;
+}
+.input{
+  box-shadow:inset 0 0 5px rgba(0, 0, 0, 0.05);
+  border-radius: 2px;
+  border: 1px solid rgb(190, 190, 190);
+  font-size: 15px;
+  height: 36px;
+  padding-left: 8px;
+  flex:1;
+  width:0;
+}
+.input::placeholder{
+  font-family: roboto;
+}
+.right-section{
+  margin-right:22px;
+  margin-left: 40px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+.channelpic{
+  height: 32px;
+  border-radius: 16px;
+}
+.ytapp,
+.notification,
+.upload{
+  height: 24px;
+}
+.notificationrelative{
+  position: relative;
+}
+.notifications-number{
+  position: absolute;
+  top: 2px;
+  right: -1px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  height:14px;
+  width:14px;
+  border: 2px solid white;
+  margin-top: -4px;
+  margin-right: -4px;
+  font-size: 10px;
+  background:rgb(182, 24, 24);
+  color:white;
+  font-family: roboto;
+  border-radius: 16px;
+}

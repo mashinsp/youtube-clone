@@ -1,6 +1,6 @@
 @media (max-width: 1200px) {  
   .sidebar{
-      background: rgb(255, 255, 255);
+      background: rgb(15, 15, 15);
       position: fixed;
       left: 0;
       bottom: 0;
@@ -33,7 +33,7 @@
 }
 @media (min-width: 1200.1px){
     .sidebar{
-        background: rgb(255, 255, 255);
+        background: rgb(15, 15, 15);
         position: fixed;
         left: 0;
         bottom: 0;

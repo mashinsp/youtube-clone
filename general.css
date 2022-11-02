@@ -7,10 +7,12 @@ p{
   }
   .thumbnail{
     width: 100%;
+    border-radius: 5px;
+
   }
   .video-stats,
   .video-author{
-    color:rgb(96, 96, 96);
+    color:rgb(170, 170, 170);
     font-size:12px;
   }
   .video-author{
@@ -25,7 +27,7 @@ p{
       font-weight: 500;
       line-height: 20px;
       margin-bottom: 10px;
-      color: black;
+      color: rgb(255, 255, 255);
   }
   .video-grid{
     display:grid;
@@ -115,7 +117,7 @@ p{
     padding-top: 80px;
     padding-left: 95px;
     padding-right: 24px;
-    background-color: rgb(249, 249, 249);
+    background-color: rgb(15, 15, 15);
   }
   .video-info{
     margin-top:-2px;
